@@ -1,6 +1,6 @@
 name: Rust lint & test
 
-on: pull_request
+on: push
 
 jobs:
   lint:
