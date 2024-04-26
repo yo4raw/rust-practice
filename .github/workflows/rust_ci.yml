@@ -30,3 +30,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
       - name: Run test
         run: cargo test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
